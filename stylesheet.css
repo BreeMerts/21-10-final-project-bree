@@ -161,9 +161,10 @@
     width: 5rem;
     height: 5rem;
     top: 30%;
-    left: -10%;
-    position: absolute;
+    left: -50%;
+    position: sticky;
     z-index: 1111;
+    size: fill;
 
     offset-path: path('M.31,236.08C74.18,178.25,315.89,4.1,670.82.55c375.76-3.76,631,186.16,701.76,242.73');
     offset-distance: 0%;
@@ -419,6 +420,14 @@ footer a {
 
 footer p {
   color: var(--pink);
+}
+
+.home-footer {
+  background-color: transparent;
+}
+
+.home-footer p {
+  color: var(--light-yellow);
 }
 
 @supports (display: grid) {
