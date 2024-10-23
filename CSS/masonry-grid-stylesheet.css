@@ -1,0 +1,21 @@
+/* masonry grid CSS */
+.grid--masonry {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, min(24em, 100%));
+  grid-template-rows: masonry;
+  justify-content: center;
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
+  grid-gap: 20px;
+  padding: 20px;
+  align-content: center;
+
+}
+
+.grid--masonry > * {
+  width: min(24em, 100%);
+}
+
+.grid--masonry img {
+  border-radius: 4px;
+}

@@ -1,0 +1,509 @@
+/*  = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+  Author: Bree Mehrtens
+  Date: 4 September 2024
+
+  CONTENTS:
+  ________
+
+  001.  GENERAL STYLES
+  002.  NAVIGATION MENU
+  004.  INDEX PAGE LAYOUT
+  005.  INDEX BALL ANIMATION
+  006.  MAIN BODY
+  007.  PLANT PAGE LAYOUT
+  008.  CONTACT FORM
+  009.  PAGE FOOTER
+
+  */
+
+/* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+  001.  GENERAL STYLES
+
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
+
+@import url(CSS/reset.css);
+@import url(CSS/typography.css);
+@import url(CSS/colour.css);
+
+/* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+  002.  NAVIGATION MENU
+
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
+
+.topnav {
+  overflow: hidden;
+  background-color: var(--light-pink);
+  z-index: 1111;
+}
+
+
+.topnav a {
+  float: right;
+  color: var(--dark-text);
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: var(--typeface-montserrat);
+}
+
+.topnav a:hover {
+  color: white;
+}
+
+.topnav a.current-page {
+  float: left;
+  padding-left: 2rem;
+  font-family: var(--typeface-lilita);
+  color: var(--green-text);
+  font-size: 1.5rem;
+}
+
+/* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+  03.  INDEX LAYOUT
+
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
+
+.home-page {
+  background: #eadcc3 url(images/home-page/home_background_svg.svg) no-repeat;
+  background-size: contain;
+  background-position: right;
+}
+
+.home-title {
+  display: inline-flex;
+  margin: auto;
+  width: 100%;
+  height: 90%;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 5rem;
+}
+
+.home-page-links {
+  background: var(--dark-text);
+  width: fit-content;
+  display: inline-flex;
+  margin-left: 5rem;
+  border-radius: 10px;
+}
+
+.home-page-links a {
+  color: var(--pink);
+  font-size: 1.5rem;
+  margin: .5rem 2rem;
+  font-family: var(--typeface-montserrat);
+}
+
+@media screen and (max-width: 1200px) {
+  .home-page {
+    background: #eadcc3 url(images/home-page/home_background_svg.svg) no-repeat;
+    background-position: right;
+  }
+  
+}
+
+@media screen and (max-width: 600px) {
+  .home-page {
+    background: #eadcc3 url(images/home-page/homepage-bottom.svg) no-repeat;
+    background-position: bottom;
+
+  }
+}
+
+/* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+  04. HOME BALL ANIMATION
+
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
+
+.path-container {
+  width: 100dvw;
+  display: block;
+  position: absolute;
+  top: 0;
+}
+
+.ball {
+  width: 5rem;
+  height: 5rem;
+  top: -8%;
+  left: 50%;
+  position: absolute;
+  z-index: 1111;
+
+  offset-path: path('M272.28.34c-57,63-570,554-19,1229');
+  offset-distance: 0%;
+  animation: ball-animation 15s linear infinite;
+  animation-fill-mode: both;
+}
+
+@keyframes ball-animation {
+  from {
+    offset-distance: 0%;
+  }
+
+  to {
+    offset-distance: 100%;
+  }
+}
+@media screen and (max-width: 1200px) {
+
+  
+}
+
+@media screen and (max-width: 600px) {
+  .ball {
+    width: 5rem;
+    height: 5rem;
+    top: 30%;
+    left: -10%;
+    position: absolute;
+    z-index: 1111;
+
+    offset-path: path('M.31,236.08C74.18,178.25,315.89,4.1,670.82.55c375.76-3.76,631,186.16,701.76,242.73');
+    offset-distance: 0%;
+    animation: ball-animation 15s linear infinite;
+    animation-fill-mode: both;
+  }
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+  05.  MAIN BODY
+
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
+
+body {
+  background-color: var(--light-background);
+  font-family: var(--typeface-montserrat);
+  height: 100vh;
+}
+
+.title {
+  display: inline-flex;
+  margin: auto;
+  width: 100%;
+  height: 90%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  color: var(--green-text);
+  font-weight: 700;
+  font-size: 10rem;
+  font-family: var(--typeface-lilita);
+}
+
+p {
+  color: var(--dark-text);
+  font-size: 1rem;
+}
+
+.project {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  background: url(images/project-shapes.png) no-repeat;
+  height: 19.438rem;
+  width: 19.438rem;
+  color: var(--pink);
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.page-links a {
+  font-family: var(--typeface-montserrat);
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 1200px) {
+  h1 {
+    font-size: 7rem;
+  }
+  
+}
+
+@media screen and (max-width: 600px) {
+  .topnav {
+    float: none;
+  }
+
+  h1 {
+    font-size: 5rem;
+  }
+
+  .current-page {
+    display: none;
+  }
+}
+
+/* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+  08.  CONTACT FORM
+
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
+
+/*  Here is the Contact Form arranged in two columns
+      A dot denotes a blank space, so the elements on those rows are left-aligned */
+@supports (display: grid) {
+  .contact-form {
+    display: grid;
+    gap: 1.5rem;
+    grid-auto-columns: 1fr 1fr;
+    grid-template-areas:
+      'contact-heading .'
+      'contact-name contact-email'
+      'contact-pref contact-browser'
+      'contact-message .'
+      'contact-submit .';
+    padding-block: 2rem;
+    width: min(95%, 70rem);
+    margin-inline: auto;
+  }
+}
+
+/*  For mobile device widths, elements are stacked in a single column */
+@media screen and (max-width: 65rem) {
+  .contact-form {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-areas:
+      'contact-heading'
+      'contact-name'
+      'contact-email'
+      'contact-pref'
+      'contact-message'
+      'contact-browser'
+      'contact-submit';
+    margin-left: 1rem;
+  }
+
+  .contact-form input,
+  .contact-form select,
+  .contact-form textarea {
+    width: 20rem;
+  }
+}
+
+/*  For mobile device widths, elements are stacked in a single column */
+@media screen and (max-width: 32.5rem) {
+
+  .contact-form input,
+  .contact-form select,
+  .contact-form textarea {
+    max-width: 90dvw;
+  }
+}
+
+.contact-form__heading {
+  grid-area: contact-heading;
+  color: var(--dark-text);
+  font-weight: 400;
+  font-size: 2.6rem;
+}
+
+.contact-form label {
+  min-width: 100rem;
+}
+
+.contact-form h3,
+.contact-form p {
+  color: var(--dark-text);
+  font-weight: 500;
+}
+
+.contact-form__name {
+  grid-area: contact-name;
+}
+
+.contact-form__email {
+  grid-area: contact-email;
+}
+
+.contact-form__preference {
+  grid-area: contact-pref;
+}
+
+.contact-form__message {
+  grid-area: contact-message;
+}
+
+.contact-form__browser {
+  grid-area: contact-browser;
+}
+
+.contact-form__submit {
+  grid-area: contact-submit;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  padding: 0 1.4rem;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+  background-color: white;
+  color: var(--dark-text);
+}
+
+.contact-form .contact-form__message textarea {
+  padding-top: .8rem;
+  width: 30rem;
+}
+
+.contact-form input,
+.contact-form select {
+  height: 2.8rem;
+  width: 30rem;
+}
+
+.contact-form__submit button {
+  background-color: var(--button-colour);
+  border: none;
+  background-color: var(--dark-text);
+  color: var(--pink);
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.2rem;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+  transition: all .3s;
+  border-radius: 5px;
+}
+
+.contact-form__submit button:hover {
+  color: var(--cream-text);
+  box-shadow: none;
+}
+
+.contact-form__submit button:active {
+  box-shadow: inset 0 2px 15px rgba(0, 0, 0, .3);
+}
+
+.success-page {
+  margin: 5dvw;
+}
+
+/* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+  009.  WEBSITE FOOTER
+
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
+
+footer {
+  padding: 2rem;
+  background-color: var(--dark-text);
+}
+
+footer a {
+  font-size: 2rem;
+  color: var(--pink);
+}
+
+footer p {
+  color: var(--pink);
+}
+
+@supports (display: grid) {
+  .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-gap: 2rem;
+  }
+}
+
+.footer__menu {
+  padding: 2rem;
+}
+
+.footer__menu__heading {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+ul.footer__menu__list {
+  list-style-type: none;
+}
+
+ul.footer__menu__list li a {
+  text-decoration: none;
+  color: var(--off-white);
+}
+
+ul.footer__menu__list li a:hover {
+  text-decoration: underline;
+}
+
+.footer__copyright-details p {
+  font-size: .8rem;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.footer__cc-license {
+  display: flex;
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+.footer__cc-license a {
+  color: var(--off-white);
+}
+
+/* *********************
+  FOOTER MEIA QUERIES
+ ********************* */
+
+/* Max width 1120px or 70rem */
+@media screen and (max-width: 70rem) {
+  .footer-grid {
+    grid-template-columns: repeat(auto-fit, minmax(6.25rem, 1fr));
+  }
+
+  .footer__menu {
+    padding: 0;
+  }
+
+  footer p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 35rem) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 2rem;
+  }
+
+  .footer__menu {
+    padding: 0;
+  }
+
+  footer p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 18.125rem) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+}

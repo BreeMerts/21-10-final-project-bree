@@ -1,0 +1,26 @@
+/* ==============================
+
+    T Y P O G R A P H Y
+
+    ============================= */
+
+    @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Inter:wght@300;400;500;700&family=Merriweather&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+    @import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Shrikhand&display=swap');
+    
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+    :root {
+        --typeface-poppins: 'Poppins', sans-serif;
+        --typeface-comfortaa: 'Comfortaa', sans-serif;
+        --typeface-merriweather: 'Merriweather', serif;
+        --typeface-inter: 'Inter', sans-serif;
+        --typeface-open-sans: 'Open Sans', sans-serif;
+        --typeface-space-grotesk: 'Space Grotesk', sans-serif;
+        --typeface-bebas: 'Bebas Neue', sans-serif;
+        --typeface-lilita: 'Lilita One', sans-serif;
+        --typeface-shrikhand: 'Shrikhand', serif;
+        --typeface-montserrat: 'Montserrat', sans-serif;
+    } 

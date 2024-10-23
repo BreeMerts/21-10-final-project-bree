@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="mi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- The CSS for layout, colour and typography is stored in this external file below: -->
+  <!-- <link rel="stylesheet" href="exercise-one.css"> -->
+  <link rel="stylesheet" href="stylesheet.css">
+
+  <title>Bree Portfolio</title>
+</head>
+
+<body> <!-- This is the BODY. Anything and everything that is in here appears in the browser window, or viewport. -->
+
+  <!-- = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+        GRID LAYOUT  - EXERCISE 1
+
+      = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = -->
+
+  <header>
+    <nav class="topnav" id="myTopnav">
+      <a class="current-page">CONTACT</a>
+      <a href="about.html">about</a>
+      <a href="projects.html">projects</a>
+      <a href="index.html">home</a>
+    </nav>
+    <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </header>
+
+  <article class="title">
+    <h1>
+      CONTACT
+    </h1>
+    <p>
+      need to get in touch with me?
+    </p>
+  </article>
+
+  <form name="contact" method="POST" data-netlify="true" class="contact-form" action="/contact-success.html">
+    <input type="hidden" name="form-name" value="contact">
+
+    <h3 class="contact-form__heading">Contact me</h3>
+    <p class="contact-form__name">
+        <label>Your Name: </label><br><input type="text" name="name" placeholder="Name" required autofocus />
+    </p>
+    <p class="contact-form__email">
+        <label>Your Email: </label><br><input type="email" name="email" placeholder="Email" required />
+    </p>
+    <p class="contact-form__preference">
+        <label>What do you think of this website: </label><br><select name="prefernce[]"
+            placeholder="Select from list">
+            <option value="like">I like it!</option>
+            <option value="dislike">Hmmm... could do with some work</option>
+        </select>
+    </p>
+    <p class="contact-form__message">
+        <label>Message: </label><br><textarea name="message" rows="7" cols="60"
+            placeholder="Type your message. . ."></textarea>
+    </p>
+    <p class="contact-form__browser">
+        <label>What browser are you using?</label><br>
+        <input list="browsers" placeholder="Click here to choose from list...">
+        <datalist id="browsers">
+            <option value="Internet Explorer">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist>
+    </p>
+    <p class="contact-form__submit">
+        <button type="submit">Send</button>
+    </p>
+</form>
+
+</body>
+
+</html>

@@ -1,0 +1,140 @@
+/* Stylesheet for the image grid for my portfolio website. */
+
+
+.image-grid {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-template-areas:
+       "one one one two"
+       "one one one three"
+       "five four four three "
+       "five six six six"
+       "seven six six six";
+       padding: 2rem 10rem;
+
+}
+
+.one {
+   grid-area: one;
+   width: auto;
+}
+
+.two {
+   grid-area: two;
+   width: auto;
+}
+
+.three {
+   grid-area: three;
+   width: auto;
+}
+
+.four {
+   grid-area: four;
+   width: auto;
+}
+
+.five {
+   grid-area: five;
+   width: auto;
+}
+
+.six {
+   grid-area: six;
+   width: auto;
+}
+
+.page-links {
+   display: grid;
+   grid-template-areas:
+       "painting drawing digital other";
+   gap: 2rem;
+   height: 85%;
+   width: 100%;  
+   text-align: center;
+   align-content: center;
+   justify-content: center;
+}
+
+.overlay {
+   display: grid;
+   position: absolute;
+   grid-template-areas:
+       "text-1 text-2 text-3 text-4";
+   gap: 2rem;
+   height: 50vh;  
+   text-align: center;
+   align-content: center;
+   justify-content: center;
+}
+
+.painting {
+   grid-area: painting;
+   width: auto;
+}
+
+.drawing {
+   grid-area: drawing;
+   width: auto;
+}
+
+.digital {
+   grid-area: digital;
+   width: auto;
+}
+
+.other {
+   grid-area: other;
+   width: auto;
+}
+
+@media screen and (max-width: 1200px) {
+   .image-grid {
+       display: grid;
+       grid-template-columns: auto;
+       grid-template-areas:
+           "one one two"
+           "one one three"
+           "four four three"
+           "five six six"
+           "five six six";
+       padding: 2rem 2rem;
+   }
+
+   .page-links {
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-areas:
+          "painting drawing"
+          "digital other";
+      padding: 2rem 2rem;
+   }
+}
+
+@media screen and (max-width: 600px) {
+   .image-grid {
+       display: grid;
+       grid-template-columns: auto;
+       grid-template-areas:
+           "one"
+           "two"
+           "three"
+           "four"
+           "five"
+           "six";
+       align-content: center;
+   }
+
+   .page-links {
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: auto;
+      grid-template-areas:
+          "painting"
+          "drawing"
+          "digital"
+          "other";
+     align-content: center;
+     margin-top: 50vh;
+  }
+}

@@ -1,0 +1,26 @@
+/* Assigning colours to variables */
+html {
+    --red: #e43d12;
+    --dark-pink: #d6536d;
+    --light-background: #eadcc3;
+    --green-text: #026b42;
+    --dark-text: #0b2b2c;
+    --pink: #f8b2c4;
+    --yellow: #efb11d;
+    --yellow-light: #f4cc2d;
+
+}
+
+    /* 
+    e43d12 red
+    d6536d dark pink
+    ffa2b6 light pink
+    efb11d yellow
+    ebe9e1 cream
+-----------------------------
+    edc7b7 warm pink
+    eee2dc sand
+    bab2b5 slate
+    123c69 dark blue
+    ac3b61 deep pink
+    */
