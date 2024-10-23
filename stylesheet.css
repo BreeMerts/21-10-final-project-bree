@@ -160,15 +160,14 @@
   .ball {
     width: 5rem;
     height: 5rem;
-    top: 30%;
-    left: -50%;
-    position: sticky;
+    top: 35%;
+    left: -75%;
+    position: absolute;
     z-index: 1111;
-    size: fill;
 
     offset-path: path('M.31,236.08C74.18,178.25,315.89,4.1,670.82.55c375.76-3.76,631,186.16,701.76,242.73');
     offset-distance: 0%;
-    animation: ball-animation 15s linear infinite;
+    animation: ball-animation 25s linear infinite;
     animation-fill-mode: both;
   }
 
@@ -238,8 +237,16 @@ p {
 }
 
 @media screen and (max-width: 600px) {
-  .topnav {
-    float: none;
+  .home-title {
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 4rem;
+    margin-left: 0;
+  }
+
+  .home-page-links {
+    margin: 1rem;
+    align-self: center;
   }
 
   h1 {
