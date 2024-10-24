@@ -19,3 +19,8 @@
 .grid--masonry img {
   border-radius: 4px;
 }
+
+.grid--masonry a {
+  width:fit-content;
+  height: fit-content;
+}

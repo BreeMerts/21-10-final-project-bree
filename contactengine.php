@@ -12,7 +12,7 @@ $Message = Trim(stripslashes($_POST['Message']));
 // validation
 $validationOK=true;
 if (!$validationOK) {
-  print "<meta http-equiv=\"refresh\" content=\"0;URL=contact-error.html\">";
+  print "<meta http-equiv=\"refresh\" content=\"0;URL=contact-fail.html\">";
   exit;
 }
 
