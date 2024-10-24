@@ -5,12 +5,12 @@
    display: grid;
    grid-template-columns: 1fr 1fr 1fr 1fr;
    grid-template-areas:
-       "one one one two"
-       "one one one three"
-       "five four four three "
-       "five six six six"
-       "seven six six six";
-       padding: 2rem 10rem;
+      "one one one two"
+      "one one one three"
+      "five four four three "
+      "five six six six"
+      "seven six six six";
+   padding: 2rem 10rem;
 
 }
 
@@ -47,10 +47,10 @@
 .page-links {
    display: grid;
    grid-template-areas:
-       "painting drawing digital other";
+      "painting drawing digital other";
    gap: 2rem;
    height: 85%;
-   width: 100%;  
+   width: 100%;
    text-align: center;
    align-content: center;
    justify-content: center;
@@ -60,9 +60,9 @@
    display: grid;
    position: absolute;
    grid-template-areas:
-       "text-1 text-2 text-3 text-4";
+      "text-1 text-2 text-3 text-4";
    gap: 2rem;
-   height: 50vh;  
+   height: 50vh;
    text-align: center;
    align-content: center;
    justify-content: center;
@@ -88,41 +88,75 @@
    width: auto;
 }
 
+.about-grid {
+   display: grid;
+   grid-template-columns: 1fr, 1fr, 1fr;
+   grid-template-areas:
+      "boo-cat stubby-cat about-text";
+   padding: 2rem 10rem;
+   gap: 2rem;
+}
+
+.boo-cat {
+   grid-area: boo-cat;
+   width: 100%;
+}
+
+.stubby-cat {
+   grid-area: stubby-cat;
+   width: 100%;
+}
+
+.about-text {
+   grid-area: about-text;
+   width: auto;
+}
+
 @media screen and (max-width: 1200px) {
    .image-grid {
-       display: grid;
-       grid-template-columns: auto;
-       grid-template-areas:
-           "one one two"
-           "one one three"
-           "four four three"
-           "five six six"
-           "five six six";
-       padding: 2rem 2rem;
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-areas:
+         "one one two"
+         "one one three"
+         "four four three"
+         "five six six"
+         "five six six";
+      padding: 2rem 2rem;
    }
 
    .page-links {
       display: grid;
       grid-template-columns: auto;
       grid-template-areas:
-          "painting drawing"
-          "digital other";
+         "painting drawing"
+         "digital other";
       padding: 2rem 2rem;
+   }
+
+   .about-grid {
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-areas:
+         "about-text about-text"
+         "boo-cat stubby-cat";
+      padding: 2rem 5rem;
+      gap: 2rem;
    }
 }
 
 @media screen and (max-width: 600px) {
    .image-grid {
-       display: grid;
-       grid-template-columns: auto;
-       grid-template-areas:
-           "one"
-           "two"
-           "three"
-           "four"
-           "five"
-           "six";
-       align-content: center;
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-areas:
+         "one"
+         "two"
+         "three"
+         "four"
+         "five"
+         "six";
+      align-content: center;
    }
 
    .page-links {
@@ -130,11 +164,22 @@
       grid-template-columns: auto;
       grid-template-rows: auto;
       grid-template-areas:
-          "painting"
-          "drawing"
-          "digital"
-          "other";
-     align-content: center;
-     margin-top: 50vh;
-  }
+         "painting"
+         "drawing"
+         "digital"
+         "other";
+      align-content: center;
+      margin-top: 50vh;
+   }
+
+   .about-grid {
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-areas:
+         "about-text"
+         "boo-cat"
+         "stubby-cat";
+      padding: 1rem 5rem;
+      gap: 2rem;
+   }
 }

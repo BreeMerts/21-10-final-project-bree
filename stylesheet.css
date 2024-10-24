@@ -33,6 +33,7 @@
 
 = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
 
+
 .topnav {
   overflow: hidden;
   background-color: var(--light-pink);
@@ -97,6 +98,11 @@
   font-size: 1.5rem;
   margin: .5rem 2rem;
   font-family: var(--typeface-montserrat);
+}
+
+.about-text {
+  text-align: center;
+  align-content: center;
 }
 
 @media screen and (max-width: 1200px) {
