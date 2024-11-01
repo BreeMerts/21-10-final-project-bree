@@ -100,11 +100,6 @@
   font-family: var(--typeface-montserrat);
 }
 
-.about-text {
-  text-align: center;
-  align-content: center;
-}
-
 @media screen and (max-width: 1200px) {
   .home-page {
     background: #eadcc3 url(images/home-page/home_background_svg.svg) no-repeat;
@@ -233,6 +228,11 @@ p {
 .page-links a {
   font-family: var(--typeface-montserrat);
   font-size: 2rem;
+}
+
+.about-text {
+  text-align: center;
+  align-content: center;
 }
 
 @media screen and (max-width: 1200px) {
