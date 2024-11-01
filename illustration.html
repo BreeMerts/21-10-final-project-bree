@@ -10,6 +10,7 @@
   <!-- <link rel="stylesheet" href="exercise-one.css"> -->
   <link rel="stylesheet" href="stylesheet.css">
   <link rel="stylesheet" href="CSS/masonry-grid-stylesheet.css">
+  <link href="css/lightbox.min.css" rel="stylesheet">
 
   <title>Bree Portfolio - Illustration</title>
 </head>
@@ -47,12 +48,25 @@
 
   <article class="images">
     <div class="grid--masonry">
-      <img src="images/illustration/2020-woman-faceon.png" />
-      <img src="images/illustration/2020-woman-charchol.png" />
-      <img src="images/illustration/2020-man-pen.png"/>
-      <img src="images/illustration/2020-man-charchol.png"/>
-      <img src="images/illustration/2019.png" />
-    
+      <a href="images/illustration/2020-woman-faceon.png" data-lightbox="illustrations">
+        <img src="images/illustration/2020-woman-faceon.png" alt="Charchol woman">
+      </a>
+
+      <a href="images/illustration/2020-woman-charchol.png" data-lightbox="illustrations">
+        <img src="images/illustration/2020-woman-charchol.png" alt="Charchol woman body">
+      </a>
+
+      <a href="images/illustration/2020-man-pen.png" data-lightbox="illustrations">
+        <img src="images/illustration/2020-man-pen.png" alt="Pen man">
+      </a>
+
+      <a href="images/illustration/2020-man-charchol.png" data-lightbox="illustrations">
+        <img src="images/illustration/2020-man-charchol.png" alt="Charchol man curled over">
+      </a>
+
+      <a href="images/illustration/2019.png" data-lightbox="other">
+        <img src="images/illustration/2019.png" alt="Group of illustrations">
+      </a>
     </div>
 
 
@@ -64,6 +78,7 @@
   </footer>
 
   <script src="js/masonry-grid-script.js"></script>
+  <script src="js/lightbox-plus-jquery.min.js"></script>
 
 </body>
 

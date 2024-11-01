@@ -10,6 +10,7 @@
   <!-- <link rel="stylesheet" href="exercise-one.css"> -->
   <link rel="stylesheet" href="stylesheet.css">
   <link rel="stylesheet" href="CSS/masonry-grid-stylesheet.css">
+  <link href="css/lightbox.min.css" rel="stylesheet">
 
   <title>Bree Portfolio - Other</title>
 </head>
@@ -47,9 +48,15 @@
 
   <article class="images">
     <div class="grid--masonry">
-      <img src="images/other/surf-front.png" />
-      <img src="images/other/surf-back.png" />
-      <img src="images/other/surf-red.png"/>
+      <a href="images/other/surf-front.png" data-lightbox="other">
+        <img src="images/other/surf-front.png" alt="Top of surfboard with drawings">
+      </a>
+      <a href="images/other/surf-back.png" data-lightbox="other">
+        <img src="images/other/surf-back.png" alt="Bottom of surfboard with drawings">
+      </a>
+      <a href="images/other/surf-red.png" data-lightbox="other">
+        <img src="images/other/surf-red.png" alt="Top of surfboard with Oni drawing">
+      </a>
     
     </div>
 
@@ -62,6 +69,7 @@
   </footer>
 
   <script src="js/masonry-grid-script.js"></script>
+  <script src="js/lightbox-plus-jquery.min.js"></script>
 
 </body>
 
